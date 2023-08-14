@@ -1,3 +1,4 @@
+import { Header } from './components/Header';
 import Reactqy from './components/Reactqy';
 import './globals.css';
 import { Inter } from 'next/font/google';
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
 
     <html lang="en">
-      <body className={inter.className}><Reactqy >{children}</Reactqy></body>
+      <body className={inter.className}><Reactqy ><Header />{children}</Reactqy></body>
     </html>
 
 
